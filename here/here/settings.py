@@ -81,8 +81,12 @@ WSGI_APPLICATION = 'here.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'heredbs',
+        'USER': 'hereuser',
+        'PASSWORD': 'MYSQLpassUSER',
+        'HOST': '54.236.13.39',
+        'PORT': '3306',
     }
 }
 
